@@ -1,0 +1,9 @@
+
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+db.sqlite3
+static
+node_modules

@@ -1,0 +1,20 @@
+{
+  "name": "django-template-project",
+  "version": "1.0.0",
+  "description": "Django Template Project",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "connect-livereload": "^0.5.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^2.0.0",
+    "node-bourbon": "^4.2.8",
+    "tiny-lr": "^0.1.7",
+    "gulp-django-utils": "0.1.1"
+  }
+}
