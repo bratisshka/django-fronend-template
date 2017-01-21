@@ -41,8 +41,8 @@ module.exports = function (project) {
 
     app.task('watch', ['styles', 'js'], function () {
         livereload.listen();
-        app.watch('build/' + app_name + '/js/*.js', ['js']).on('change', livereload.changed);
-        app.watch('/sass/*.sass', ['styles']).on('change', livereload.changed);
+        app.watch('gulping/js/*.js', ['js']).on('change', livereload.changed);
+        app.watch('gulping/sass/*.sass', ['styles']).on('change', livereload.changed);
         app.watch('templates/*.html', []).on('change', livereload.changed);
     });
 };
