@@ -24,9 +24,10 @@ module.exports = function (project) {
                 browsers: ['last 15 versions'],
                 cascade: false
             }))
-            // .pipe(minifycss())
+            //.pipe(minifycss())
             .pipe(app.dest('static/' + app_name + '/css/'))
             .pipe(livereload());
+
     });
 
     app.task('js', function () {
@@ -38,7 +39,7 @@ module.exports = function (project) {
             .pipe(livereload());
     });
 
-    app.task('watch', function () {
+    app.task('watch', ['styles', 'js'], function () {
         livereload.listen();
         app.watch('build/' + app_name + '/js/*.js', ['js']).on('change', livereload.changed);
         app.watch('/sass/*.sass', ['styles']).on('change', livereload.changed);
